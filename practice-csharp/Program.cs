@@ -10,7 +10,7 @@ using System;
 //    }
 //}
 
-namespace HelloWorldApplication 
+namespace HelloWorldApplication  
 {
     public class Program
     {
