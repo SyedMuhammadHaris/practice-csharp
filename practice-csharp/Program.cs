@@ -90,6 +90,10 @@ namespace HelloWorldApplication
             b = b - a;
             Console.WriteLine("The value of a after swaping is : " + a);
             Console.WriteLine("The value of b after swaping is : " + b);
+
+            //int temp = a;
+            //a = b;
+            //b = temp;
         }
     }
 }
