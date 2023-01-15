@@ -151,7 +151,7 @@ namespace HelloWorldApplication
             Console.WriteLine("Enter a number : ");
             string userInput = Console.ReadLine();
             try
-            {
+            {  
                 int userInputInt = int.Parse(userInput);
             }
             //catch (Exception)
