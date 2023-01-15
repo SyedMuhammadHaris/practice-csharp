@@ -79,21 +79,94 @@ namespace HelloWorldApplication
       //      Console.WriteLine("The ReaasignedAvariable "+a);
       //  }
 
-    public static void Main()
-    {
-            //Your task is to swap a two numbers without using third varaible
+    //public static void Main()
+    //{
+    //        //Your task is to swap a two numbers without using third varaible
 
-            int a = 30;
-            int b = 50;
-            b = a + b;
-            a = b - a;
-            b = b - a;
-            Console.WriteLine("The value of a after swaping is : " + a);
-            Console.WriteLine("The value of b after swaping is : " + b);
+    //        int a = 30;
+    //        int b = 50;
+    //        b = a + b;
+    //        a = b - a;
+    //        b = b - a;
+    //        Console.WriteLine("The value of a after swaping is : " + a);
+    //        Console.WriteLine("The value of b after swaping is : " + b);
 
-            //int temp = a;
-            //a = b;
-            //b = temp;
+    //        //int temp = a;
+    //        //a = b;
+    //        //b = temp;
+    //    }
+
+    // Methods in C#
+     //public static void Main()
+     //   {
+     //       //PrintName();
+     //       //Console.WriteLine("My age is : " + PrintAge(25));
+
+     //       Console.WriteLine(Multiply(Multiply(2.45f,5.32f), Multiply(4.45f, 6.32f)));
+     //       Console.WriteLine("Result of Divide is : "+Divide(5,8));
+     //   }
+
+     //   //accces modifier, static keyword(if main method create with static keyword), return type of method, name of method(parameter1,parameter2, ...);
+     //   //public static void PrintName()
+     //   //{
+     //   //    Console.WriteLine("My name is Nadeem");
+     //   //}
+     //   //public static int PrintAge(int age)
+     //   //{
+     //   //   return age;
+     //   //}
+
+     //   public static float Multiply(float a , float b)
+     //   {
+     //       return a * b;
+     //   }
+
+     //   public static double Divide(double a , double b)
+     //   {
+     //       return a / b;
+     //   }
+
+        //public static void Main()
+        //{
+
+        //    int var1 =  Convert.ToInt32(Console.ReadLine());
+        //    int var2 = Convert.ToInt32(Console.ReadLine());
+        //    string var3 = Console.ReadLine();
+        //    int num3 = int.Parse(var3);
+        //    Console.WriteLine("The result is : " + Add(var1 , var2, num3));
+        //    Some("Helllooooooo");
+        //}
+        //public static int Add(int a, int b, int c)
+        //{
+
+        //    return a + b + c;
+        //}
+        //public static void Some(string a)
+        //{
+        //    Console.WriteLine(a);
+        //}
+
+        public static void Main()
+        {
+            Console.WriteLine("Enter a number : ");
+            string userInput = Console.ReadLine();
+            try
+            {
+                int userInputInt = int.Parse(userInput);
+            }
+            //catch (Exception)
+            //{
+            //throw;
+            //    Console.WriteLine(" The error is");
+            //}
+            catch (FormatException)// and other exception is overflow exception , argumentNull exception
+            {
+                Console.WriteLine("The error is format excenption");
+            }
+            finally
+            {
+                Console.WriteLine("Fnallyy call");
+            }
         }
     }
 }
