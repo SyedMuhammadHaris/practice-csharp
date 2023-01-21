@@ -221,6 +221,19 @@ namespace HelloWorldApplication
     //   Console.WriteLine("The && operator result is :"+ isResult);
     //   isResult = isSunny || isCold;
     //   Console.WriteLine("The OR || operator result is :"+ isResult);
+       
+            // if statements
+    //   string temperature = Console.ReadLine();
+    //   int temp = int.Parse(temperature);
+    //   if(temp < 10){
+    //       Console.WriteLine("It is very cold");
+    //   }
+    //   if(temp > 10){
+    //      Console.WriteLine("It is not cold");
+    //   }
+    //   if(temp == 10){
+    //      Console.WriteLine("It is cold");
+    //   }
         }
     }
 }
