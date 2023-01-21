@@ -159,7 +159,7 @@ namespace HelloWorldApplication
             //throw;
             //    Console.WriteLine(" The error is");
             //}
-            catch (FormatException)// and other exception is overflow exception , argumentNull exception
+            catch (FormatException)// and other exception is overflow exception , argumentNull exception, DivideByZeroException
             {
                 Console.WriteLine("The error is format excenption");
             }
