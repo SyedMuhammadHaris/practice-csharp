@@ -167,6 +167,60 @@ namespace HelloWorldApplication
             {
                 Console.WriteLine("Fnallyy call");
             }
+                    // Console.WriteLine("Enter a number : ");
+        // int num1 = -5;
+        // int num2 = -num1;
+        // Console.WriteLine(num2);
+        // int num = 0;
+        // //increment
+        // num++;
+        // Console.WriteLine(num);
+        // Console.WriteLine(num++);
+        // Console.WriteLine(++num);
+        
+        // //decrement
+        // num--;
+        //  Console.WriteLine(num);
+        // Console.WriteLine(num--);
+        // Console.WriteLine(--num);
+        //add,sub,mul,div
+        
+    //     int num1 = 6;
+    //     int num2 = 9;
+    //     int result = num1 + num2;
+    //     Console.WriteLine("The add of two number is : "+ result+"\n");
+    //     result = num1 - num2;
+    //     Console.WriteLine("The sub of two number is : "+ result);
+    //     result = num1 * num2;
+    //     Console.WriteLine("The mul of two number is : "+ result);
+    //     float a = 3;
+    //     float b = 5;
+    //     float result1 = a / b;
+    //     Console.WriteLine("The div of two number is : "+ result1);
+    //     result = num1 % num2;
+    //     Console.WriteLine("The remainder of two number is : "+ result);
+
+    //   //relational and  type operators
+       
+    //   bool isGreater;
+    //   isGreater = num1 > num2;
+    //   Console.WriteLine("The num is greater or not : "+isGreater);
+       
+    //   //Equality Operators
+    //   bool isEqual;
+    //   isEqual = num1 == num2;
+    //   Console.WriteLine("The 2 numbers is Equal or not : "+ isEqual);
+       
+    //   isEqual = num1 != num2;
+    //   Console.WriteLine("The 2 numbers is Equal or not : "+ isEqual);
+       
+    //   //Conditional Operators
+    //   bool isSunny = true;
+    //   bool isCold = false;
+    //   bool isResult  = isSunny && isCold;
+    //   Console.WriteLine("The && operator result is :"+ isResult);
+    //   isResult = isSunny || isCold;
+    //   Console.WriteLine("The OR || operator result is :"+ isResult);
         }
     }
 }
