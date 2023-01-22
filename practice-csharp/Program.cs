@@ -148,92 +148,123 @@ namespace HelloWorldApplication
 
         public static void Main()
         {
-            Console.WriteLine("Enter a number : ");
-            string userInput = Console.ReadLine();
-            try
-            {  
-                int userInputInt = int.Parse(userInput);
-            }
-            //catch (Exception)
-            //{
-            //throw;
-            //    Console.WriteLine(" The error is");
+            //Console.WriteLine("Enter a number : ");
+            //string userInput = Console.ReadLine();
+            //try
+            //{  
+            //    int userInputInt = int.Parse(userInput);
             //}
-            catch (FormatException)// and other exception is overflow exception , argumentNull exception, DivideByZeroException
-            {
-                Console.WriteLine("The error is format excenption");
-            }
-            finally
-            {
-                Console.WriteLine("Fnallyy call");
-            }
-                    // Console.WriteLine("Enter a number : ");
-        // int num1 = -5;
-        // int num2 = -num1;
-        // Console.WriteLine(num2);
-        // int num = 0;
-        // //increment
-        // num++;
-        // Console.WriteLine(num);
-        // Console.WriteLine(num++);
-        // Console.WriteLine(++num);
-        
-        // //decrement
-        // num--;
-        //  Console.WriteLine(num);
-        // Console.WriteLine(num--);
-        // Console.WriteLine(--num);
-        //add,sub,mul,div
-        
-    //     int num1 = 6;
-    //     int num2 = 9;
-    //     int result = num1 + num2;
-    //     Console.WriteLine("The add of two number is : "+ result+"\n");
-    //     result = num1 - num2;
-    //     Console.WriteLine("The sub of two number is : "+ result);
-    //     result = num1 * num2;
-    //     Console.WriteLine("The mul of two number is : "+ result);
-    //     float a = 3;
-    //     float b = 5;
-    //     float result1 = a / b;
-    //     Console.WriteLine("The div of two number is : "+ result1);
-    //     result = num1 % num2;
-    //     Console.WriteLine("The remainder of two number is : "+ result);
+            ////catch (Exception)
+            ////{
+            ////throw;
+            ////    Console.WriteLine(" The error is");
+            ////}
+            //catch (FormatException)// and other exception is overflow exception , argumentNull exception, DivideByZeroException
+            //{
+            //    Console.WriteLine("The error is format excenption");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Fnallyy call");
+            //}
+            // Console.WriteLine("Enter a number : ");
+            // int num1 = -5;
+            // int num2 = -num1;
+            // Console.WriteLine(num2);
+            // int num = 0;
+            // //increment
+            // num++;
+            // Console.WriteLine(num);
+            // Console.WriteLine(num++);
+            // Console.WriteLine(++num);
 
-    //   //relational and  type operators
-       
-    //   bool isGreater;
-    //   isGreater = num1 > num2;
-    //   Console.WriteLine("The num is greater or not : "+isGreater);
-       
-    //   //Equality Operators
-    //   bool isEqual;
-    //   isEqual = num1 == num2;
-    //   Console.WriteLine("The 2 numbers is Equal or not : "+ isEqual);
-       
-    //   isEqual = num1 != num2;
-    //   Console.WriteLine("The 2 numbers is Equal or not : "+ isEqual);
-       
-    //   //Conditional Operators
-    //   bool isSunny = true;
-    //   bool isCold = false;
-    //   bool isResult  = isSunny && isCold;
-    //   Console.WriteLine("The && operator result is :"+ isResult);
-    //   isResult = isSunny || isCold;
-    //   Console.WriteLine("The OR || operator result is :"+ isResult);
-       
+            // //decrement
+            // num--;
+            //  Console.WriteLine(num);
+            // Console.WriteLine(num--);
+            // Console.WriteLine(--num);
+            //add,sub,mul,div
+
+            //     int num1 = 6;
+            //     int num2 = 9;
+            //     int result = num1 + num2;
+            //     Console.WriteLine("The add of two number is : "+ result+"\n");
+            //     result = num1 - num2;
+            //     Console.WriteLine("The sub of two number is : "+ result);
+            //     result = num1 * num2;
+            //     Console.WriteLine("The mul of two number is : "+ result);
+            //     float a = 3;
+            //     float b = 5;
+            //     float result1 = a / b;
+            //     Console.WriteLine("The div of two number is : "+ result1);
+            //     result = num1 % num2;
+            //     Console.WriteLine("The remainder of two number is : "+ result);
+
+            //   //relational and  type operators
+
+            //   bool isGreater;
+            //   isGreater = num1 > num2;
+            //   Console.WriteLine("The num is greater or not : "+isGreater);
+
+            //   //Equality Operators
+            //   bool isEqual;
+            //   isEqual = num1 == num2;
+            //   Console.WriteLine("The 2 numbers is Equal or not : "+ isEqual);
+
+            //   isEqual = num1 != num2;
+            //   Console.WriteLine("The 2 numbers is Equal or not : "+ isEqual);
+
+            //   //Conditional Operators
+            //   bool isSunny = true;
+            //   bool isCold = false;
+            //   bool isResult  = isSunny && isCold;
+            //   Console.WriteLine("The && operator result is :"+ isResult);
+            //   isResult = isSunny || isCold;
+            //   Console.WriteLine("The OR || operator result is :"+ isResult);
+
             // if statements
-    //   string temperature = Console.ReadLine();
-    //   int temp = int.Parse(temperature);
-    //   if(temp < 10){
-    //       Console.WriteLine("It is very cold");
-    //   }
-    //   if(temp > 10){
-    //      Console.WriteLine("It is not cold");
-    //   }
-    //   if(temp == 10){
-    //      Console.WriteLine("It is cold");
-    //   }
+            //   string temperature = Console.ReadLine();
+            //   int temp = int.Parse(temperature);
+            //   if(temp < 10){
+            //       Console.WriteLine("It is very cold");
+            //   }
+            //   if(temp > 10){
+            //      Console.WriteLine("It is not cold");
+            //   }
+            //   if(temp == 10){
+            //      Console.WriteLine("It is cold");
+            //   }
+
+            // --- Topic Try Parse--- //
+
+            string temperature = Console.ReadLine();
+            int temp;
+            int number;
+            if(int.TryParse(temperature, out temp))
+            {
+                
+                //Console.WriteLine(number);
+                if (temp < 10)
+                {
+                    Console.WriteLine("It is very cold");
+                }
+                else
+               if (temp > 10)
+                {
+                    Console.WriteLine("It is not cold");
+                }
+                else
+               if (temp == 10)
+                {
+                    Console.WriteLine("It is cold");
+                }
+            }
+            else
+            {
+                Console.WriteLine( "Provide string is invalid");
+            }
+
+            Main();
         }
     }
 }
