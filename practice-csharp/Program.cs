@@ -239,7 +239,6 @@ namespace HelloWorldApplication
 
             string temperature = Console.ReadLine();
             int temp;
-            int number;
             if(int.TryParse(temperature, out temp))
             {
                 
