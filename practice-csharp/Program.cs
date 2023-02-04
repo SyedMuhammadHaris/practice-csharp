@@ -237,33 +237,68 @@ namespace HelloWorldApplication
 
             // --- Topic Try Parse--- //
 
-            string temperature = Console.ReadLine();
-            int temp;
-            if(int.TryParse(temperature, out temp))
-            {
-                
-                //Console.WriteLine(number);
-                if (temp < 10)
-                {
-                    Console.WriteLine("It is very cold");
-                }
-                else
-               if (temp > 10)
-                {
-                    Console.WriteLine("It is not cold");
-                }
-                else
-               if (temp == 10)
-                {
-                    Console.WriteLine("It is cold");
-                }
-            }
-            else
-            {
-                Console.WriteLine( "Provide string is invalid");
-            }
+            //string temperature = Console.ReadLine();
+            //int temp;
+            //if(int.TryParse(temperature, out temp))
+            //{
 
-            Main();
+            //    //Console.WriteLine(number);
+            //    if (temp < 10)
+            //    {
+            //        Console.WriteLine("It is very cold");
+            //    }
+            //    else
+            //   if (temp > 10)
+            //    {
+            //        Console.WriteLine("It is not cold");
+            //    }
+            //    else
+            //   if (temp == 10)
+            //    {
+            //        Console.WriteLine("It is cold");
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine( "Provide string is invalid");
+            //}
+            //int a = 15;
+            //if(a < 10)
+            //{
+            //    Console.WriteLine("A is  less than 10 of course");
+            //}
+            //else
+            //if(a < 20)
+            //{
+            //    Console.WriteLine("A is  less than 20 of course");
+            //}
+
+            // Switch Statements
+            //string role = "admin";
+            //string role = Console.ReadLine();
+            //switch (role)
+            //{
+            //    case "admin":
+            //        Console.WriteLine("You are admin");
+            //        break;
+            //    case "user":
+            //        Console.WriteLine("you are user");
+            //        break;
+            //    case "subadmin":
+            //        Console.WriteLine("You are subsmin");
+            //        break; 
+            //   default: 
+            //        Console.WriteLine("You are out:");
+            //        break;
+            //}
+
+            //  ternary operator
+            int a = 3;
+            bool isEven;
+            isEven = (a % 2 == 0) ? true: false;
+            Console.WriteLine("The number is Even or not {0}",isEven);
+
+            //Main();
         }
     }
 }
