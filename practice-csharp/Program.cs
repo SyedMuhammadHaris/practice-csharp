@@ -11,7 +11,7 @@ using System;
 //}
 
 namespace HelloWorldApplication  
-{
+{  
     public class Program
     {
         //<summary>
@@ -293,12 +293,127 @@ namespace HelloWorldApplication
             //}
 
             //  ternary operator
-            int a = 3;
-            bool isEven;
-            isEven = (a % 2 == 0) ? true: false;
-            Console.WriteLine("The number is Even or not {0}",isEven);
+            //int a = 3;
+            //bool isEven;
+            //isEven = (a % 2 == 0) ? true: false;
+            //Console.WriteLine("The number is Even or not {0}",isEven);
 
-            //Main();
-        }
+             //  C3 loops practice
+
+            // class HelloWorld {
+            //   static void Main() {
+            //     int counter;
+            //     //for loop
+            //     for(counter = 0; counter <= 50; counter +=5){
+            //         Console.WriteLine("The value is : {0}", counter);
+            //     }
+
+            //  //int count;
+            //      //even numbers program
+            //     for(count = 1; count < 20; count++){
+            //         if(count % 2 == 0){
+            //             Console.WriteLine("The even numebrs is: {0}",count);
+            //         }
+            //     }
+
+            //   int count;
+            //      //odd numbers program simple approach
+            //     for(count = 1; count < 20; count += 2){
+            //             Console.WriteLine("The even numebrs is: {0}",count);
+
+            //     }
+
+
+
+            // do while loop
+            //  int count = 12;
+            //   do{
+            //       Console.WriteLine("The Counter value is: {0}", count);
+            //       count ++;
+            //   }while(count <= 10);
+
+            //   string userInput = Console.ReadLine();
+            //   int count = Int32.Parse(userInput);
+            //   do{
+            //       Console.WriteLine("The Counter value is: {0}", count);
+            //       count ++;
+            //   }while(count <= 10);
+
+            //practice program
+            //int lenghtOftext = 0;
+            //   string wholeText = "";
+            //   do{
+            //   Console.WriteLine("Enter the name of friend");
+            //   string nameOfFriend = Console.ReadLine();
+            //   int currentLength = nameOfFriend.Length;
+            //   lenghtOftext += currentLength;
+            //   wholeText += nameOfFriend;
+
+            //   }while(lenghtOftext < 20);
+            //   Console.WriteLine("The whole text is : {0}",wholeText);
+
+            //   // while loop 
+            // int count = 0;
+            // while(count < 10)
+            // {
+            //     Console.WriteLine(count);
+            //     count++;
+            // }
+
+            // break and continue keyword
+    //        for (int i = 0; i < 10; i++)
+    //        {
+    //            //   if(i == 3)
+    //            //   {
+    //            //       Console.WriteLine("We stop at 3");
+    //            //       break;
+    //            //   }
+    //            if (i % 2 == 1)
+    //            {
+    //                Console.WriteLine("We skip odd numbers ");
+    //                continue;
+    //            }
+    //            Console.WriteLine(i);
+    //        }
+
+
+
+    //    }
+    //}
+
+      // OOP Learning
+
+
+//public class HelloWorld
+//    {
+//        public static void Main(string[] args)
+//        {
+
+//            Human sarim = new Human();
+//            sarim.firstName = "Sarim"; // override kar de ga class ke andar jo hum ne define kia hai
+//            sarim.lastName = "Ali";
+//            sarim.IntroduceYourSelf();
+
+//            Human Fahad = new Human();
+//            Fahad.firstName = "FAhad";
+//            Fahad.lastName = "Shamsi";
+//            Fahad.IntroduceYourSelf();
+//        }
+//    }
+
+
+//    class Human
+//    {
+//        public string firstName = "ahr";
+//        public string lastName;
+
+//        public void IntroduceYourSelf()
+//        {
+//            Console.WriteLine("I am {0} {1}", firstName, lastName);
+//        }
+//    }
+
+    //Main();
+}
     }
 }
