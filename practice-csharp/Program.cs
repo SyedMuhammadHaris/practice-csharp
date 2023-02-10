@@ -198,7 +198,7 @@ namespace HelloWorldApplication
 
             //}
 
-            //ArrayList
+            //ArrayList can store multipe type of with different data type 
 
             //declare ArrayList with undined amount of objects
             ArrayList myArrayList = new ArrayList();
@@ -220,6 +220,17 @@ namespace HelloWorldApplication
             //Console.WriteLine(myArrayList2[1]);
 
             foreach(object obj in myArrayList2) 
+            {
+                Console.WriteLine(obj);
+            }
+
+            //List in C#
+            //List can only storre specific type of data type (int or string) 
+            List<string> listOfNames = new List<string>();
+            listOfNames.Add("Sahmir");
+            listOfNames.Add("Amir");
+
+            foreach(object obj in listOfNames)
             {
                 Console.WriteLine(obj);
             }
