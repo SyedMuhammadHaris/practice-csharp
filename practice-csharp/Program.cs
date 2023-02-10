@@ -227,6 +227,7 @@ namespace HelloWorldApplication
             //List in C#
             //List can only storre specific type of data type (int or string) 
             List<string> listOfNames = new List<string>();
+            List<string> listOfNames1 = new List<string> { "hh","hadashdga","djsajk"};
             listOfNames.Add("Sahmir");
             listOfNames.Add("Amir");
 
